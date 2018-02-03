@@ -11,7 +11,16 @@ body {
     min-height: 100%;
     overflow-x: hidden;
     background-color: #f7f5e8;
+    padding-right: 0!important;
 }
+
+ body.modal-open {
+    overflow: hidden;
+    position:fixed;
+    width: 100%;
+}
+
+    
 
 
 /*---------------------------------NAVIGATION---------------------------------*/
@@ -539,7 +548,7 @@ h1 {
     color: #cf001f;
     align-self: center;
     margin: 10px;
-    text-align:center;
+    text-align: center;
 }
 
 .news p {
@@ -1177,16 +1186,16 @@ hr {
         display: flex;
         padding: 0;
     }
-    
+
     .social-section ul li i {
         font-size: 30px;
     }
 
     .social-section ul li {
-        padding:0;
+        padding: 0;
         padding-left: 20px;
     }
-    
+
     .social-section ul li:first-child {
         padding-left: 0;
     }
@@ -1225,3 +1234,160 @@ hr {
 }
 
 /*---------------------------------FOOTER---------------------------------*/
+
+/*---------------------------------BOOKING FORM--------------------------------*/
+
+.in {
+    padding-right: 0!important;
+}
+
+.modal .modal-dialog {
+    border-radius: 0;
+    margin-top: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.modal .modal-dialog .modal-content {
+
+    width: 100%;
+    background-color: white;
+    border-radius: 0;
+
+}
+.modal .modal-content .modal-header {
+    background-color: #cf001f;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.modal .modal-content .modal-header h4 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+.modal .modal-content .modal-body {
+    position: relative;
+}
+
+.modal .modal-content .modal-body h5 {
+    color: #4173b8;
+    font-size: 20px;
+    font-weight: 600;
+    text-align:center;
+}
+
+.modal .modal-content .modal-body .contact-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal .modal-content .modal-body .contact-info .contact-center{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.modal .modal-content .modal-body .contact-info .contact-center .info {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    text-decoration: none;
+}
+
+.modal .modal-content .modal-body .contact-info .contact-center .info i {
+    font-size: 40px;
+    color: #ff002f;
+}
+
+.modal .modal-content .modal-body .contact-info .contact-center .info i:hover {
+    color: #cf001f;
+}
+
+.modal .modal-content .modal-body .contact-info .contact-center .info span {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #333;
+}
+
+.modal .modal-content .modal-body .contact-info .contact-center .info span:hover {
+    color: black;
+}
+
+.modal .modal-content .modal-body .contact-info .contact-center #connect {
+    width: 1px;
+    height: 55px;
+    position: absolute;
+    top: 0;
+    margin-top: 53px;
+    margin-left: 16px;
+    border-left: 3px dotted #ff002f;
+}
+
+
+.modal .modal-content .modal-body form {
+    padding: 20px;
+    padding-bottom: 20px;
+}
+
+.modal .modal-content .modal-body form .require  {
+    color: #888;
+    font-size: .8em;
+}
+
+.modal .modal-content .modal-body form .button-center {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+
+.modal .modal-content .modal-body form .button-center button  {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #cf001f;
+    color: white;
+    border: none;
+    border-radius: 0;
+    margin: 10px 0;
+}
+
+.modal .modal-content .modal-body form .button-center p {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    align-self: center;
+    margin: 0;
+    
+}
+
+.modal .modal-content .modal-body form .form-group .form-control:focus {
+    border-color: red;
+}
+
+.modal .modal-content .modal-body form .form-group textarea .form-control  {
+    margin-bottom: 35px;
+}
+
+.modal .modal-content .modal-body form .form-group p  {
+    color: #222;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+     .modal .modal-content .modal-body form .button-center {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    
+    .modal .modal-content .modal-body form .button-center button  {
+        width: 180px;
+    }
+   
+}

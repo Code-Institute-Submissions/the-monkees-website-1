@@ -54,7 +54,7 @@
                 <p>
                     The Monkees are now booking events, parties and weddings all over the world! Don't miss out!
                 </p>
-                <button>Book Now</button>
+                <button type="button" data-toggle="modal" data-target="#bookingModal">Book Now</button>
             </div>
 
             <div class="news-section-col">
@@ -286,7 +286,65 @@
 
     </footer>
     
-
+        <div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Throw a party with music played by a world class band THE MONKEES</h4>
+                    <br>
+                    <h4 class="modal-title" id="myModalLabel">We will light up your event with unforgettable sounds and performances</h4>
+                </div>
+                <div class="modal-body">
+                    <h5>CONTACT US</h5>
+                    <div class="contact-info">
+                        <div class="contact-center">
+                            <a href="#" class="info"><i class="fas fa-phone-square"></i><span id="last">098-090-0990</span></a>
+                            <div id="connect"></div>
+                            <a href="#" class="info"><i class="fas fa-envelope-square"></i><span>info@themonkees.com</span></a>
+                        </div>
+                    </div>
+                    <h5>OR FILL OUT THE FORM BELOW</h5>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name <span class="require">[Required]</span></label>
+                            <input type="text" class="form-control" id="name" placeholder="Jane Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="require">[Required]</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="janedoe@gmail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span class="require">[Required]</span></label>
+                            <input type="text" class="form-control" id="form" placeholder="000-000-0000" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="type">Type of Event <span class="require">[Required]</span></label>
+                            <input type="text" class="form-control" id="type" placeholder="wedding" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location of Event <span class="require">[Required]</span></label>
+                            <input type="text" class="form-control" id="location" placeholder="10 Loreto Park, Dublin, Ireland" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date of Event <span class="require">[Required]</span></label>
+                            <input type="date" class="form-control" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="details">Details of Event <span class="require">[Optional]</span></label>
+                            <textarea class="form-control" id="details" rows="6" placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry."></textarea>
+                            <p class="help-block">We'll never share your personal details with anyone</p>
+                        </div>
+                        <div class="button-center">
+                            <button type="reset">Reset Form</button>
+                            <p>Or</p>
+                            <button type="submit">Confirm Booking</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
