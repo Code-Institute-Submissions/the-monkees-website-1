@@ -12,15 +12,16 @@ body {
     overflow-x: hidden;
     background-color: #f7f5e8;
     padding-right: 0!important;
+    letter-spacing: 1.2px;
 }
 
- body.modal-open {
+body.modal-open {
     overflow: hidden;
-    position:fixed;
+    position: fixed;
     width: 100%;
 }
 
-    
+
 
 
 /*---------------------------------NAVIGATION---------------------------------*/
@@ -32,7 +33,7 @@ nav {
     right: 0;
     top: 0;
     flex-direction: column;
-    z-index: 100;
+    z-index: 10000;
 }
 
 .logo {
@@ -47,7 +48,7 @@ nav {
 
 }
 
-img {
+.logo img {
     max-width: 90px;
     padding-top: 2px;
 }
@@ -159,19 +160,7 @@ img {
 
 }
 
-
-@media (min-width: 767px) {
-    .label-toggle {
-        left: 92%;
-    }
-
-    #navigation-toggle {
-        left: 92%;
-    }
-
-}
-
-@media (min-width: 760px) {
+@media (min-width: 768px) {
     nav {
         display: flex;
         position: fixed;
@@ -194,7 +183,7 @@ img {
 
     }
 
-    img {
+    .logo img {
         max-width: 150px;
         padding-left: 10px;
     }
@@ -294,7 +283,7 @@ img {
 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
     nav {
         display: flex;
         position: initial;
@@ -317,7 +306,7 @@ img {
 
     }
 
-    img {
+    .logo img {
         max-width: 250px;
         padding-left: 10px;
     }
@@ -417,9 +406,9 @@ img {
 
 }
 
-/*---------------------------------NAVIGATION---------------------------------*/
+/*==============================================NAVIGATION==============================================*/
 
-/*---------------------------------MAIN---------------------------------*/
+/*==============================================MAIN CONTENT==============================================*/
 
 .background {
     position: absolute;
@@ -433,10 +422,10 @@ img {
 }
 
 h1 {
-    font-size: 30px;
-    font-weight: 800;
+    font-size: 20px;
+    font-weight: 600;
     padding: 10px 0;
-    color: #1f3759;
+    color: #4173b8;
     background-color: #f7f5e8;
     text-align: center;
     width: 100%;
@@ -452,6 +441,10 @@ h1 {
     align-items: center;
     margin-top: 120px;
 }
+
+/*==============================================HOMEPAGE==============================================*/
+
+/*==============================================PUBLICITY CONTAINER==============================================*/
 
 .publicity-container {
     display: flex;
@@ -471,7 +464,7 @@ h1 {
     left: 50%;
     top: 120px;
     transform: translateX(-50%);
-    min-width: 250px;
+    max-width: 250px;
     z-index: -1;
 
 }
@@ -498,6 +491,12 @@ h1 {
     color: white;
 
 }
+
+/*==============================================PUBLICITY CONTAINER==============================================*/
+
+/*==============================================HOMEPAGE==============================================*/
+
+/*==============================================HOMEPAGE==============================================*/
 
 /*==============================================NEWS==============================================*/
 
@@ -537,7 +536,7 @@ h1 {
 }
 
 .news img {
-    min-width: 80%;
+    max-width: 80%;
     align-self: center;
 }
 
@@ -679,7 +678,12 @@ h1 {
     display: none;
 }
 
+
 /*==============================================NEWS==============================================*/
+
+/*==============================================HOMEPAGE==============================================*/
+
+/*==============================================HOMEPAGE==============================================*/
 
 /*==============================================TOURS==============================================*/
 
@@ -736,10 +740,6 @@ h1 {
 
 }
 
-br {
-    display: none;
-}
-
 .tour h5 {
     text-align: center;
     align-self: center;
@@ -792,7 +792,13 @@ br {
 
 /*==============================================TOURS==============================================*/
 
-@media (min-width: 767px) {
+/*==============================================HOMEPAGE==============================================*/
+
+/*==============================================MAIN==============================================*/
+
+/*==============================================MEDIA QUERIES==============================================*/
+
+@media (min-width: 768px) {
     .background {
         position: absolute;
         width: 600px;
@@ -814,6 +820,8 @@ br {
         margin-top: 170px;
     }
 
+    /*==============================================HOME PAGE==============================================*/
+    /*==============================================MEDIA QUERIES==============================================*/
     .publicity-container {
         display: flex;
         flex-flow: column;
@@ -823,18 +831,10 @@ br {
         height: 350px;
         background: white;
         z-index: 0;
-
-
     }
 
     .publicity-container img {
-        position: absolute;
-        left: 50%;
         top: 160px;
-        transform: translateX(-50%);
-        min-width: 250px;
-        z-index: -1;
-
     }
 
     .publicity-container button {
@@ -862,6 +862,7 @@ br {
 
     h1 {
         width: 600px;
+        font-size: 20px;
 
     }
 
@@ -892,7 +893,7 @@ br {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
     .background {
         position: absolute;
         width: 70%;
@@ -928,13 +929,8 @@ br {
     }
 
     .publicity-container img {
-        position: absolute;
-        left: 50%;
         top: 170px;
-        transform: translateX(-50%);
-        min-width: 500px;
-        z-index: -1;
-
+        max-width: 450px;
     }
 
     .publicity-container button {
@@ -961,7 +957,7 @@ br {
     }
 
     h1 {
-        font-size: 50px;
+        font-size: 30px;
         width: 4000px;
 
     }
@@ -993,10 +989,377 @@ br {
     }
 }
 
+/*==============================================MEDIA QUERIES==============================================*/
 
-/*---------------------------------MAIN---------------------------------*/
+/*==============================================HOMEPAGE==============================================*/
 
-/*---------------------------------FOOTER---------------------------------*/
+/*==============================================BAND PAGE==============================================*/
+
+.band-img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.band-img img {
+    width: 100%;
+    border: 8px white solid;
+    border-radius: 0;
+}
+
+.band-about h1 {
+    margin-bottom: 30px;
+}
+
+
+
+.band-about {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+
+.band-about .about-section {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.band-about .about-section p {
+    padding: 20px 20px 40px 20px;
+    font-size: 13px;
+    color: #444;
+}
+
+
+
+
+.band-members {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.band-members h1 {
+    margin-bottom: 30px;
+}
+
+.band-members .members-section {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+
+.band-members .members-section .member {
+    background-color: white;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.band-members .members-section .member img {
+    width: 100%;
+    border: 5px solid white;
+}
+
+.band-members .members-section .member h4 {
+    padding-top: 20px;
+    color: #222;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.band-members .members-section .member a {}
+
+.band-members .members-section .member a i {}
+
+
+.band-members .members-section .member .lightbox {
+    position: absolute;
+    top: 0;
+    max-width: 100%;
+    z-index: 999;
+    display: none;
+    flex-flow: column;
+
+}
+
+.band-members .members-section .member .lightbox .member-lightbox {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+
+}
+
+.band-members .members-section .member .lightbox .member-lightbox img {
+    width: 100%;
+    border: 5px solid white;
+}
+
+.band-members .members-section .member .lightbox .member-lightbox .lightbox-text {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border-top: 2px solid #1f3759;
+
+}
+
+.band-members .members-section .member .lightbox .member-lightbox .lightbox-text h4 {
+    padding-top: 20px;
+    color: #222;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.band-members .members-section .member .lightbox .member-lightbox .lightbox-text p {
+    padding: 20px;
+    color: #444;
+    font-size: 13px;
+}
+
+.lightbox-label-toggle {
+    padding: 10px;
+    font-size: 24px;
+    color: #ff002f;
+}
+
+.lightbox-label-toggle:active {
+    color: #cf001f;
+}
+
+
+#lightbox-toggle,
+#lightbox-toggle-2,
+#lightbox-toggle-3,
+#lightbox-toggle-4 {
+    display: none;
+}
+
+#lightbox-toggle:checked+label+.overlay,
+#lightbox-toggle-2:checked+label+.overlay,
+#lightbox-toggle-3:checked+label+.overlay,
+#lightbox-toggle-4:checked+label+.overlay {
+    display: initial;
+}
+
+#lightbox-toggle:checked+label+.overlay+div.lightbox,
+#lightbox-toggle-2:checked+label+.overlay+div.lightbox,
+#lightbox-toggle-3:checked+label+.overlay+div.lightbox,
+#lightbox-toggle-4:checked+label+.overlay+div.lightbox {
+    display: flex;
+
+
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .5;
+    z-index: 998;
+}
+
+
+@media (min-width: 768px) {
+    .band-img {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .band-img img {
+        width: 100%;
+        border: 8px white solid;
+        border-radius: 0;
+    }
+
+    .band-about h1 {
+        margin-bottom: 30px;
+    }
+
+
+
+    .band-about {
+        width: 80%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+
+    .band-about .about-section {
+        width: 100%;
+        background-color: white;
+        margin-bottom: 40px;
+    }
+
+    .band-about .about-section p {
+        padding: 30px;
+        font-size: 16px;
+        color: #444;
+    }
+
+
+
+
+    .band-members {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin-bottom: 150px;
+    }
+
+    .band-members h1 {
+        margin-bottom: 30px;
+    }
+
+    .band-members .members-section {
+        width: 80%;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    .band-members .members-section .member {
+        background-color: white;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 22%;
+    }
+
+    .band-members .members-section .member img {
+        width: 100%;
+        border: 5px solid white;
+    }
+
+    .band-members .members-section .member h4 {
+        padding: 0;
+        color: #222;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+
+    .band-members .members-section .member .lightbox {
+        position: fixed;
+        width: 80%;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        z-index: 999;
+        display: none;
+        flex-flow: column;
+
+    }
+
+    .band-members .members-section .member .lightbox .member-lightbox {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        background: none;
+
+    }
+
+    .band-members .members-section .member .lightbox .member-lightbox img {
+        padding: 20px;
+        width: 50%;
+        border: none;
+        background-color: white;
+    }
+
+    .band-members .members-section .member .lightbox .member-lightbox .lightbox-text {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        border:none;
+        border-left: 1px solid #e2e2e2;
+        background-color: white;
+
+    }
+
+    .band-members .members-section .member .lightbox .member-lightbox .lightbox-text h4 {
+        padding-top: 30px;
+        color: #222;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .band-members .members-section .member .lightbox .member-lightbox .lightbox-text p {
+        padding: 20px;
+        color: #444;
+        font-size: 16px;
+    }
+
+    .lightbox-label-toggle {
+        padding: 5px;
+        font-size: 30px;
+        color: #ff002f;
+    }
+
+    .lightbox-label-toggle:hover {
+        color: #cf001f;
+    }
+
+
+    #lightbox-toggle,
+    #lightbox-toggle-2,
+    #lightbox-toggle-3,
+    #lightbox-toggle-4 {
+        display: none;
+    }
+
+    #lightbox-toggle:checked+label+.overlay,
+    #lightbox-toggle-2:checked+label+.overlay,
+    #lightbox-toggle-3:checked+label+.overlay,
+    #lightbox-toggle-4:checked+label+.overlay {
+        display: initial;
+    }
+
+    #lightbox-toggle:checked+label+.overlay+div.lightbox,
+    #lightbox-toggle-2:checked+label+.overlay+div.lightbox,
+    #lightbox-toggle-3:checked+label+.overlay+div.lightbox,
+    #lightbox-toggle-4:checked+label+.overlay+div.lightbox {
+        display: flex;
+
+
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: .5;
+        z-index: 998;
+    }
+}
+
+
+
+
+/*==============================================BAND PAGE==============================================*/
+
+/*==============================================MAIN==============================================*/
+
+/*==============================================FOOTER==============================================*/
 
 .footer {
     position: absolute;
@@ -1049,7 +1412,7 @@ hr {
     color: white;
 }
 
-.social-section ul li i:hover {
+.social-section ul li i:active {
     color: #4173b8;
     transition: color .1s ease-in-out;
 }
@@ -1085,7 +1448,7 @@ hr {
     font-size: 22px;
 }
 
-.contact-section ul li a:hover {
+.contact-section ul li a:active {
     color: #4173b8;
     transition: color .1s ease-in-out;
 
@@ -1102,6 +1465,9 @@ hr {
 
 }
 
+/*==============================================FOOTER==============================================*/
+
+/*==============================================MEDIA QUERIES==============================================*/
 
 @media (min-width: 768px) {
     .footer {
@@ -1153,7 +1519,7 @@ hr {
 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
     .footer {
         height: 120px;
         display: flex;
@@ -1187,10 +1553,6 @@ hr {
         padding: 0;
     }
 
-    .social-section ul li i {
-        font-size: 30px;
-    }
-
     .social-section ul li {
         padding: 0;
         padding-left: 20px;
@@ -1199,6 +1561,17 @@ hr {
     .social-section ul li:first-child {
         padding-left: 0;
     }
+
+    .social-section ul li i {
+        font-size: 30px;
+    }
+
+    .social-section ul li i:hover {
+        color: #4173b8;
+        transition: color .1s ease-in-out;
+    }
+
+
 
 
     .contact-section {
@@ -1220,6 +1593,12 @@ hr {
         display: flex;
     }
 
+    .contact-section ul li a:hover {
+        color: #4173b8;
+        transition: color .1s ease-in-out;
+
+    }
+
     .contact-section span {
         font-size: 20px;
         margin-left: 10px;
@@ -1233,9 +1612,14 @@ hr {
 
 }
 
-/*---------------------------------FOOTER---------------------------------*/
 
-/*---------------------------------BOOKING FORM--------------------------------*/
+/*==============================================MEDIA QUERIES==============================================*/
+
+/*==============================================HOMEPAGE==============================================*/
+
+/*==============================================FOOTER==============================================*/
+
+/*==============================================BOOKING FORM==============================================*/
 
 .in {
     padding-right: 0!important;
@@ -1257,11 +1641,13 @@ hr {
     border-radius: 0;
 
 }
+
 .modal .modal-content .modal-header {
     background-color: #cf001f;
     padding: 20px;
     margin-bottom: 20px;
 }
+
 .modal .modal-content .modal-header h4 {
     font-size: 20px;
     font-weight: 600;
@@ -1277,7 +1663,7 @@ hr {
     color: #4173b8;
     font-size: 20px;
     font-weight: 600;
-    text-align:center;
+    text-align: center;
 }
 
 .modal .modal-content .modal-body .contact-info {
@@ -1285,7 +1671,7 @@ hr {
     justify-content: space-around;
 }
 
-.modal .modal-content .modal-body .contact-info .contact-center{
+.modal .modal-content .modal-body .contact-info .contact-center {
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
@@ -1334,7 +1720,7 @@ hr {
     padding-bottom: 20px;
 }
 
-.modal .modal-content .modal-body form .require  {
+.modal .modal-content .modal-body form .require {
     color: #888;
     font-size: .8em;
 }
@@ -1345,7 +1731,7 @@ hr {
     justify-content: space-around;
 }
 
-.modal .modal-content .modal-body form .button-center button  {
+.modal .modal-content .modal-body form .button-center button {
     width: 100%;
     height: 50px;
     font-size: 16px;
@@ -1363,31 +1749,41 @@ hr {
     font-weight: 600;
     align-self: center;
     margin: 0;
-    
+
 }
 
 .modal .modal-content .modal-body form .form-group .form-control:focus {
     border-color: red;
 }
 
-.modal .modal-content .modal-body form .form-group textarea .form-control  {
+.modal .modal-content .modal-body form .form-group textarea .form-control {
     margin-bottom: 35px;
 }
 
-.modal .modal-content .modal-body form .form-group p  {
+.modal .modal-content .modal-body form .form-group p {
     color: #222;
     margin-top: 20px;
 }
 
-@media (min-width: 768px) {
-     .modal .modal-content .modal-body form .button-center {
+/*==============================================BOOKING FORM==============================================*/
+
+/*==============================================MEDIA QUERIES==============================================*/
+
+@media (min-width: 1024x) {
+    .modal .modal-content .modal-body form .button-center {
         display: flex;
         flex-flow: row;
         justify-content: space-between;
     }
-    
-    .modal .modal-content .modal-body form .button-center button  {
+
+    .modal .modal-content .modal-body form .button-center button {
         width: 180px;
     }
-   
+
 }
+
+/*==============================================MEDIA QUERIES==============================================*/
+
+/*==============================================BOOKING FORM==============================================*/
+
+/*==============================================BOOKING FORM==============================================*/
