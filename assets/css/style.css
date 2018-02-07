@@ -55,6 +55,7 @@ nav {
     background-color: #F0002A;
     background-clip: padding-box;
     max-height: 80px;
+    min-height: 80px;
 
 }
 
@@ -450,7 +451,8 @@ h1 {
     font-size: 14px;
     word-wrap: break-word;
     height: 400px;
-    overflow-y:scroll;
+    overflow-y: scroll;
+
 }
 
 .news-label-toggle {
@@ -663,17 +665,27 @@ h1 {
 }
 
 .tour p {
+    position: absolute;
+    visibility: hidden;
+    z-index: 0;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
+    -ms-grid-row-align: center;
         align-self: center;
     padding: 20px;
     font-size: 16px;
-    color:#111;
+    color: #111;
+    opacity:0;
 
 }
 
-.tour:not(:hover)>p {
-    display: none;
+.tour:hover>p {
+    position: initial;
+    visibility: visible;
+    z-index: 1;
+    opacity: 1;
+    -webkit-transition: background-color .2s ease-in-out;
+    -o-transition: background-color .2s ease-in-out;
+    transition: all .3s ease-in-out;
 
 }
 
