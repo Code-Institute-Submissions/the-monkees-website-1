@@ -29,7 +29,7 @@ Link: [https://alexander4k.github.io/the-monkees-website/](https://alexander4k.g
 
 ## Testing 
 
-Tested on mobile, tablet and desktop devices for responsiveness.
+Tested on mobile, tablet and desktop devices for responsiveness and in different browsers(Firefox, Microsoft Edge and Google Chrome) to test browser compatibility.
 
 ## Installation 
 
