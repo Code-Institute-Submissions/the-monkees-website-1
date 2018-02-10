@@ -6,8 +6,6 @@ The Monkees website has been developed to be completely responsive. Users can re
 and upcoming tours, listen to songs from the bands catalog as well as watch clips and check out photos, and read about
 the band itself.
 
-[Click here](https://alexander4k.github.io/the-monkees-website/) to see it.
-
 ## Features 
 
 * Events booking form built by modifying the Bootstrap modal component
@@ -21,7 +19,25 @@ the band itself.
 
 This website was developed to be responsive primarly through the use of [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)(CSS Flexible Box Layout)
 with the [Bootstrap 3.3.7](https://getbootstrap.com/docs/3.3/) framework
-being used for certain components, such as the modal(booking form) and carousel(image slider).
+being used for certain components, such as the modal(booking form) and the carousel(image slider).
+
+## Deployment 
+
+Deployed to Github Pages 
+
+Link: [https://alexander4k.github.io/the-monkees-website/](https://alexander4k.github.io/the-monkees-website/)
+
+## Testing 
+
+Tested on mobile, tablet and desktop devices for responsiveness.
+
+## Installation 
+
+Clone the repository by copying the clone url
+
+In the terminal initialize git and type `git clone` followed by the copied url
+
+`cd` into `the-monkees-website` and open `index.html`
 
 ## License
 
