@@ -35,7 +35,7 @@ Tested on mobile, tablet and desktop devices for responsiveness and in different
 
 Clone the repository by copying the clone url
 
-In the terminal initialize git and type `git clone` followed by the copied url
+In the terminal type `git clone` followed by the copied url
 
 `cd` into `the-monkees-website` and open `index.html`
 
