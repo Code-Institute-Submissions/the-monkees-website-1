@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
+
 html {
     width: 100%;
     height: 100%;
@@ -10,11 +12,10 @@ body {
     position: relative;
     min-height: 100%;
     overflow-x: hidden;
-    background-color: #f3eece;
+    background-color: #292929;
     padding-right: 0!important;
     letter-spacing: 2px;
-    font-family: 'Acme', sans-serif;
-    font-family: 'Exo', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body.modal-open {
@@ -50,7 +51,6 @@ nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border-bottom: 3px solid #f7f5e8;
     padding-left: 15px;
     background-color: #F0002A;
     background-clip: padding-box;
@@ -64,6 +64,7 @@ nav {
     top:0;
     max-width: 90px;
     padding-top: 2px;
+    transition: max-width .3s;
 }
 
 .navigation-links {
@@ -90,6 +91,7 @@ nav {
     height: 0;
     background-color: #f7f5e8;
     background-clip: padding-box;
+    border-bottom: 3px solid #f7f5e8;
 }
 
 .navigation-list .links {
@@ -101,7 +103,7 @@ nav {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
-    height: 40px;
+    height: 50px;
     width: 100%;
     background-clip: padding-box;
 }
@@ -117,13 +119,13 @@ nav {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
-    color: #021c4a;
+    color: white;
     font-size: 16px;
     font-weight: 700;
     text-decoration: none;
-    background-color: #f7f5e8;
+    background-color: #292929;
     background-clip: padding-box;
-    font-family: 'Acme', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 .navigation-links a:hover {
@@ -191,8 +193,8 @@ nav {
 
 
 #navigation-toggle:checked~.label-toggle>span {
-    background-color: #021c4a;
-    border-color: #021c4a;
+    background-color: #292929;
+    border-color: #292929;
     -webkit-transition: all .1s ease;
     -o-transition: all .1s ease;
     transition: all .1s ease;
@@ -229,19 +231,19 @@ h1 {
     font-size: 30px;
     font-weight: 600;
     padding: 10px 0;
-    color: #4173b8;
-    background-color: #f3eece;
+    color: white;
+    background-color: #292929;
     text-align: center;
     width: 100%;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
-    font-family: 'Acme', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 .wrapper {
@@ -302,7 +304,7 @@ h1 {
     background-color: #F0002A;
     border: none;
     border-radius: 0;
-    font-family: 'Acme', sans-serif;
+    font-family: 'Roboto Slab', serif;
     z-index: 2;
 }
 
@@ -320,11 +322,11 @@ h1 {
 
 .publicity-container p {
     margin-bottom: -40px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     text-align: center;
     padding: 15px;
-    background-color: rgba(208, 0, 2, .7);
+    background-color: rgba(240, 0, 42, .85);
     color: white;
     z-index: 2;
 }
@@ -341,7 +343,7 @@ h1 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .news-section-row {
@@ -355,10 +357,8 @@ h1 {
 }
 
 .news {
-    height: 600px;
     width: 100%;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     background-color: white;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -387,7 +387,6 @@ h1 {
 
 .news .image-container {
     width: 90%;
-    height: 300px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -401,7 +400,6 @@ h1 {
 }
 
 .news .image-container img {
-    max-height: 100%;
     max-width: 100%;
     margin-top: auto;
     margin-bottom: auto;
@@ -410,15 +408,14 @@ h1 {
 .news h4 {
     font-size: 18px;
     font-weight: 600;
-    padding: 20px 10px 0 10px;
+    padding: 20px 10px 20px 10px;
     color: #BD0021;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
     margin: 10px;
     text-align: center;
-    font-family: 'Acme', sans-serif;
-    word-break: break-word;
+    font-family: 'Roboto Slab', serif;
 }
 
 .news p {
@@ -450,17 +447,19 @@ h1 {
     display: -ms-flexbox;
     display: flex;
     padding: 0;
+    padding-bottom: 20px;
     margin: 20px 15px 0;
     color: #111;
     font-size: 14px;
     word-wrap: break-word;
-    height: 400px;
-    overflow-y: scroll;
+    max-height: 300px;
+    overflow-y: visible;
+    overflow-x: hidden;
 
 }
 
 .news-label-toggle {
-    margin-top: 20px;
+    padding-bottom: 30px;
     -ms-flex-item-align: center;
         align-self: center;
     display: -webkit-box;
@@ -469,11 +468,12 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-family: 'Acme', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    cursor: pointer;
 }
 
 #invisible {
-    visibility: hidden;
+    display: none;
 }
 
 .news-label-toggle:active,
@@ -543,9 +543,9 @@ h1 {
     color: white;
     font-size: 18px;
     text-transform: uppercase;
-    font-family: 'Acme', sans-serif;
+    font-family: 'Roboto Slab', serif;
     background-color: #F0002A;
-    width: 70%;
+    width: 40%;
     height: 40px;
     text-align: center;
     -ms-flex-item-align: center;
@@ -559,6 +559,7 @@ h1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    cursor: pointer;
 }
 
 .news-row-label-toggle:active,
@@ -595,7 +596,7 @@ h1 {
         justify-content: space-around;
     width: 100%;
     margin-bottom: 150px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .tours-col {
@@ -613,7 +614,7 @@ h1 {
 .tour {
     width: 100%;
     padding-bottom: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     background-color: white;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -639,7 +640,7 @@ h1 {
 }
 
 .tour h6 {
-    font-size: 18px;
+    font-size: 14px;
     color: #444;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -651,10 +652,10 @@ h1 {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    font-size: 28px;
+    font-size: 20px;
     text-align: center;
     padding: 0 10px;
-    font-family: 'Acme', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 .tour h5 {
@@ -663,7 +664,7 @@ h1 {
         -ms-grid-row-align: center;
         align-self: center;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     color: #222;
     padding-bottom: 10px;
 }
@@ -716,7 +717,7 @@ h1 {
     border-radius: 0;
     border: none;
     outline: 0;
-    font-family: 'Acme', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 .tour button:active {
@@ -738,7 +739,7 @@ h1 {
 /*------------------------------------IMAGE*/
 .band-img {
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .band-img img {
@@ -764,13 +765,12 @@ h1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .band-about .about-section {
     width: 100%;
     background-color: white;
-    margin-bottom: 40px;
 }
 
 .band-about .about-section p {
@@ -778,7 +778,8 @@ h1 {
     font-size: 13px;
     color: #111;
     height: 300px;
-    overflow-y: scroll;
+    overflow-y: visible;
+    overflow-x: hidden;
 }
 
 /*------------------------------------BAND MEMBERS*/
@@ -794,7 +795,7 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 
 .band-members h1 {
@@ -819,7 +820,7 @@ h1 {
     width: 300px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -842,7 +843,7 @@ h1 {
     color: #222;
     font-size: 20px;
     font-weight: 600;
-    font-family: 'Acme', sans-serif;
+    font-family: 'Roboto Slab', serif;
     text-align: center;
 }
 
@@ -899,7 +900,7 @@ h1 {
     color: #222;
     font-size: 20px;
     font-weight: 600;
-    font-family: 'Acme', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 .band-members .members-section .member .lightbox .member-lightbox .lightbox-text p {
@@ -914,7 +915,8 @@ h1 {
     padding-bottom: 10px;
     font-size: 24px;
     color: #F0002A;
-    font-family: 'Acme', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    cursor: pointer;
 }
 
 .lightbox-label-toggle:active,
@@ -970,7 +972,7 @@ h1 {
 /*------------------------------------VIDEO*/
 .video-section {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .video-section iframe {
@@ -982,7 +984,6 @@ h1 {
 /*------------------------------------MUSIC*/
 .music-section {
     margin-bottom: 150px;
-    margin-top: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1009,7 +1010,7 @@ h1 {
             flex-direction: column;
     width: 100%;
     background-color: white;
-    margin-bottom: 40px
+    margin-bottom: 60px
 }
 
 .album img {
@@ -1038,7 +1039,7 @@ h1 {
     font-weight: 600;
     color: #F0002A;
     margin: 0;
-    font-family: 'Acme', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 .album .song-info p {
@@ -1055,7 +1056,8 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    height: 120px;
+    height: 200px;
+    padding-bottom: 15px;
     background-color: #7D0016;
     color: white;
     display: -webkit-box;
@@ -1070,8 +1072,7 @@ h1 {
 }
 
 h3 {
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 14px;
     padding: 0px;
     margin-top: 0;
     margin-bottom: 0;
@@ -1106,12 +1107,22 @@ hr {
     display: -ms-flexbox;
     display: flex;
     padding: 0;
-    padding-top: 2px;
+    padding-top: 5px;
     margin: 0;
+    margin-top: 5px;
+    border-top: 2px solid white;
 }
 
 .social-section ul li {
     padding: 0 5px;
+}
+
+.social-section ul li:first-child {
+    padding-left: 0;
+}
+
+.social-section ul li:last-child {
+    padding-right: 0;
 }
 
 .social-section ul li i {
@@ -1119,7 +1130,8 @@ hr {
     color: white;
 }
 
-.social-section ul li i:active {
+.social-section ul li i:active,
+.social-section ul li i:hover {
     color: #4173b8;
     -webkit-transition: color .1s ease-in-out;
     -o-transition: color .1s ease-in-out;
@@ -1133,8 +1145,8 @@ hr {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+        -ms-flex-flow: column;
+            flex-flow: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1151,8 +1163,17 @@ hr {
     display: -ms-flexbox;
     display: flex;
     padding: 0;
-    padding-top: 2px;
+    padding-top: 5px;
     margin: 0;
+    margin-top: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+     -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-top: 2px solid white;
 }
 
 .contact-section ul li a {
@@ -1164,14 +1185,19 @@ hr {
             align-items: center;
     color: white;
     text-decoration: none;
-    font-family: 'Acme', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 .contact-section ul li i {
     font-size: 22px;
 }
 
-.contact-section ul li a:active {
+.contact-section ul li:first-child {
+    margin-bottom: 5px;
+}
+
+.contact-section ul li a:active,
+.contact-section ul li a:hover {
     color: #4173b8;
     -webkit-transition: color .1s ease-in-out;
     -o-transition: color .1s ease-in-out;
@@ -1181,11 +1207,6 @@ hr {
 .contact-section span {
     font-size: 12px;
     margin-left: 10px;
-}
-
-.contact-section li:first-child i+span {
-    margin-right: 10px;
-
 }
 
 
@@ -1226,7 +1247,7 @@ hr {
     font-size: 20px;
     text-align: center;
     color: white;
-    font-family: 'Acme', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 .modal .modal-content .modal-body {
@@ -1237,7 +1258,7 @@ hr {
     color: #4173b8;
     font-size: 20px;
     text-align: center;
-    font-family: 'Acme', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 .modal .modal-content .modal-body .contact-info {
@@ -1334,7 +1355,7 @@ hr {
     border: none;
     border-radius: 0;
     margin: 10px 0;
-    font-family: 'Acme', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 .modal .modal-content .modal-body form .buttons button[type=reset] {
@@ -1346,7 +1367,7 @@ hr {
     border: none;
     border-radius: 0;
     margin-top: 30px;
-    font-family: 'Acme', sans-serif;
+    font-family: 'Roboto Slab', serif;
     
 }
 
@@ -1438,6 +1459,33 @@ hr {
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MEDIA-QUERIES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media (min-width: 400px){
+    .footer {
+        height: 120px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    } 
+    
+    .social-section {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+    
+    .contact-section,
+    .contact-section ul {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+}
 
 @media (min-width: 768px){
      /*____________________________ALL-PAGES____________________________*/
@@ -1472,11 +1520,16 @@ hr {
         max-width: 150px;
         padding-left: 10px;
     }
+    
+    .logo img:hover {
+       max-width: 155px;
+    }
 
     .navigation-links {
         -webkit-box-flex: 6;
             -ms-flex: 6;
                 flex: 6;
+        border-bottom: none;
     }
 
     .navigation-list {
@@ -1490,6 +1543,7 @@ hr {
         height: 100%;
         opacity: 1;
         background-color: #F0002A;
+        border-bottom: none;
     }
 
     .navigation-list .links {
@@ -1504,10 +1558,8 @@ hr {
     }
 
     .navigation-list .links a:hover {
-        color: #021c4a;
-        background-color: #f3eece;
-        border-left: 2px dashed #021c4a;
-        border-right: 2px dashed #021c4a;
+        color: white;
+        background-color: #292929;
         -webkit-transition: all .1s ease-in-out;
         -o-transition: all .1s ease-in-out;
         transition: all .1s ease-in-out;
@@ -1593,21 +1645,8 @@ hr {
         width: 600px;
     }
 
-    .news-section-row {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-flow: row;
-                flex-flow: row;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        margin-bottom: 30px;
-    }
-
     .news {
-        height: 460px;
-        width: 31%;
-        margin: 0;
+        margin-bottom: 30px;
     }
     
     .news h4 {
@@ -1615,26 +1654,11 @@ hr {
     }
 
     .news .image-container {
-        min-height: 200px;
     }
     
     .news-row-label-toggle,
     .news-row-label-toggle-2 {
         width: 200px;
-    }
-
-    #news-toggle:checked+p,
-    #news-toggle-2:checked+p,
-    #news-toggle-3:checked+p,
-    #news-toggle-4:checked+p,
-    #news-toggle-5:checked+p,
-    #news-toggle-6:checked+p,
-    #news-toggle-7:checked+p,
-    #news-toggle-8:checked+p,
-    #news-toggle-9:checked+p {
-        height: 200px;
-        overflow-y: scroll;
-        overflow-x: hidden;
     }
 
     .tour {
@@ -1654,10 +1678,6 @@ hr {
     .band-about .about-section p {
         padding: 30px;
         font-size: 16px;
-    }
-
-    .band-members {
-        margin-bottom: 150px;
     }
 
     .band-members .members-section {
@@ -1739,7 +1759,6 @@ hr {
     }
 
     .album {
-        margin-bottom: 80px;
         background: none;
         -webkit-box-align: center;
             -ms-flex-align: center;
@@ -1757,71 +1776,7 @@ hr {
         border: none;
         background-clip: padding-box;
     }
-    
-    
-    /*____________________________FOOTER____________________________*/
-    .footer {
-        height: 80px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-flow: row nowrap;
-                flex-flow: row nowrap;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-    }
 
-    h3 {
-        margin-bottom: 5px;
-    }
-
-    hr {
-        margin-top: 0;
-        margin-bottom: 3px;
-        border: 0;
-        border-top: 1px dashed #eee;
-    }
-
-    .social-section {
-        display: inherit;
-        padding-left: 30px;
-        height: 40px;
-        -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
-    }
-
-    .social-section ul {
-        padding: 0;
-    }
-
-    .social-section ul li {
-        padding: 0 5px 0 0;
-    }
-
-    .contact-section {
-        display: inherit;
-        padding-right: 30px;
-        height: 40px;
-        -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
-    }
-
-    .contact-section ul {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        padding: 0;
-    }
-    
-    
     /*____________________________BOOTSTRAP-CAROUSEL____________________________*/
      #myCarousel {
         width: 70%;
@@ -1871,6 +1826,10 @@ hr {
     .logo img {
         max-width: 250px;
     }
+    
+    .logo img:hover {
+       max-width: 255px;
+    }
 
     .navigation-links a {
         font-size: 24px;
@@ -1903,25 +1862,19 @@ hr {
     }
 
     .publicity-container button {
-        width: 300px;
-        height: 80px;
-        font-size: 34px;
+        width: 220px;
+        height: 60px;
+        font-size: 22px;
     }
 
     .publicity-container p {
-        font-size: 36px;
+        font-size: 24px;
         padding: 25px;
     }
 
     h1 {
         font-size: 30px;
         width: 4000px;
-    }
-    
-    .news {
-        height: 600px;
-        width: 31%;
-        margin: 0;
     }
     
     .news h4 {
@@ -1942,23 +1895,6 @@ hr {
         width: 70%;
     }
 
-    .news .image-container {
-        height: 300px;
-    }
-
-    #news-toggle:checked+p,
-    #news-toggle-2:checked+p,
-    #news-toggle-3:checked+p,
-    #news-toggle-4:checked+p,
-    #news-toggle-5:checked+p,
-    #news-toggle-6:checked+p,
-    #news-toggle-7:checked+p,
-    #news-toggle-8:checked+p,
-    #news-toggle-9:checked+p {
-        height: 400px;
-        overflow-y: scroll;
-    }
-
     .tour {
         width: 70%;
     }
@@ -1975,7 +1911,6 @@ hr {
     /*____________________________BAND-PAGE____________________________*/
     .band-about .about-section p {
         height: 100%;
-        overflow-y: scroll;
     }
     
     
@@ -1983,81 +1918,6 @@ hr {
     .video-section iframe {
     height: 600px;
 }
-    
-    
-    /*____________________________FOOTER____________________________*/
-    .footer {
-        height: 120px;
-    }
-
-    h3 {
-        -ms-flex-item-align: start;
-            align-self: flex-start;
-        font-size: 20px;
-    }
-
-    hr {
-        display: inherit;
-        margin-top: 5px;
-        margin-bottom: 10px;
-        width: 100%;
-        border-top: 3px dashed #eee;
-    }
-
-    .social-section {
-        height: 80px;
-    }
-
-    .social-section ul li {
-        padding: 0;
-        padding-left: 20px;
-    }
-
-    .social-section ul li:first-child {
-        padding-left: 0;
-    }
-
-    .social-section ul li i {
-        font-size: 30px;
-    }
-
-    .social-section ul li i:hover {
-        color: #4173b8;
-        -webkit-transition: color .1s ease-in-out;
-        -o-transition: color .1s ease-in-out;
-        transition: color .1s ease-in-out;
-    }
-
-    .contact-section {
-        height: 80px;
-    }
-
-    .contact-section ul li i {
-        font-size: 30px;
-    }
-
-    .contact-section ul li a {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
-
-    .contact-section ul li a:hover {
-        color: #4173b8;
-        -webkit-transition: color .1s ease-in-out;
-        -o-transition: color .1s ease-in-out;
-        transition: color .1s ease-in-out;
-    }
-
-    .contact-section span {
-        font-size: 20px;
-        margin-left: 10px;
-    }
-
-    .contact-section li:first-child i+span {
-        margin-right: 40px;
-
-    }
     
     
      /*____________________________BOOTSTRAP-MODAL/BOOKING-FORM____________________________*/
