@@ -46,16 +46,14 @@ the end I decided to have each item take up the full width of the container and 
 * [Markdown](https://en.wikipedia.org/wiki/Markdown)
   * Used for formatting user_stories.md and README.md
 
-## Deployment 
-
-Deployed to Github Pages 
-
-Link: [https://alexander4k.github.io/the-monkees-website/](https://alexander4k.github.io/the-monkees-website/)
-
 ## Testing 
 
-Tested on mobile, tablet and desktop devices using different devices and developer tools, and in different browsers(Firefox, Microsoft Edge and Google Chrome) to test browser compatibility.
+### Manual Tests
 
+Tested on mobile, tablet and desktop devices using different devices and developer tools,
+and in different browsers(Firefox, Microsoft Edge and Google Chrome) to test browser compatibility.
+
+### Automated Tests
 
 * [W3C Markup Validation Service](https://validator.w3.org/)
   * Used for testing html
@@ -70,7 +68,11 @@ Tested on mobile, tablet and desktop devices using different devices and develop
   elements' z-index to appear above the image.
 * The carousel indicator for the last photo doesn't work, get's skipped when using arrows. Haven't found a solution yet.
 
-## Installation 
+## Deployment 
+
+Deployed to Github Pages 
+
+Link: [https://alexander4k.github.io/the-monkees-website/](https://alexander4k.github.io/the-monkees-website/)
 
 Clone the repository by copying the clone url
 
@@ -80,7 +82,7 @@ In the terminal type `git clone` followed by the copied url
 
 ## Credits
 
-#### Content 
+### Content 
 
 * News - [Monkees](https://www.monkees.com/index.php)
 * Tours - [Monkees Facebook](https://www.facebook.com/TheMonkees/)
@@ -90,9 +92,13 @@ In the terminal type `git clone` followed by the copied url
 * Davey Jones Information - [Wikipedia](https://en.wikipedia.org/wiki/Davy_Jones_(musician))
 * Michael Nesmith Information - [Wikipedia](https://en.wikipedia.org/wiki/Michael_Nesmith)
 
-#### Media
+#### Fonts
 
-###### Images
+* Fonts - [Google Fonts](https://fonts.google.com/)
+
+### Media
+
+#### Images
 
 * Logo image - [Monkees](https://www.monkees.com/index.php)
 * Publicity container background image - [ListToTheBand](http://listentotheband.weebly.com/graphics.html)
@@ -113,12 +119,12 @@ In the terminal type `git clone` followed by the copied url
 * Carousel image 9 - [AtomicJunkShop](http://atomicjunkshop.com/monkees-wonders-crazy-ex-girlfriends/)
 * Carousel image 10 - [BlurtOnline](http://blurtonline.com/feature/good-time-monkees/)
 
-###### Videos
+#### Videos
 
 * Media page video - [Monkees Youtube Channel](https://www.youtube.com/watch?v=xvqeSJlgaNk)
 
 
-###### Music 
+#### Music 
 
 * [MP3 Skulls](https://mp3skulls.to/free-mp3-download/the-monkees-i-m-a-believer.html)
 
